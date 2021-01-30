@@ -6,4 +6,32 @@
   .title {
     margin: 10px 0px;
   }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+
+    .button_signin_with_google {
+      min-width: 165px;
+      width: auto;
+      height: 50px;
+      letter-spacing: 0.5px;
+      line-height: 50px;
+      padding: 0 15px 0 15px;
+      font-size: 15px;
+      background-color: black;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bolder;
+      border: none;
+      cursor: pointer;
+      border: none;
+      background-color: #4285f4;
+
+      &:hover {
+        background-color: #357a48;
+        border: none;
+      }
+    }
+  }
 }
