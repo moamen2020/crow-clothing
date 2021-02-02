@@ -12,7 +12,6 @@ import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up
 import Header from "./components/header/header-component";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user-action";
-import Directory from "./components/directory/directory-component";
 
 class App extends Component {
   unsubscrubeFromAuth = null;
@@ -49,7 +48,7 @@ class App extends Component {
             path="/signin"
             render={() =>
               this.props.currentUser ? (
-                <Directory to="/" />
+                <Redirect to="/" />
               ) : (
                 <SignInAndSignUpPage />
               )
